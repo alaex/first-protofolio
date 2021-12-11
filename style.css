@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu:wght@300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: #33343F;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+header {
+    /* background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(./img/phone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 700px;
+    color: whitesmoke;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.logo  a{
+    font-size: 40px;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* .nav-links {
+    position: absolute;
+    right: 10%;
+} */
+li , button ,a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 5px;
+}
+.nav-links ul{
+    list-style: none;
+    font-size: 15px;
+    
+}
+.nav-links ul li {
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+    color: whitesmoke;
+}
+.nav-links li a:hover {
+    color: cyan;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: cyan;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover {
+    background-color: whitesmoke;
+    color: rgb(7, 59, 59);
+}
+/* hero */
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    display: flex;
+    
+   
+}
+.container .pic {
+    width: 50%;
+}
+.container .pic img{
+    width: 650px;
+    height: 100%;
+}
+.container .desc {
+    background-color: #434459;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+.container .desc h1 {
+    padding-bottom: 30px;
+    font-size: 50px;
+}
+
+.container .desc h3 {
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+/* end */
+/* words */
+
+.words {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    color: white;
+}
+
+.wiz {
+    padding-left: 60px;
+}
+
+.wiz h2{
+    padding-top: 15%;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+/* end */
+/* services */
+
+.services {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+/* end */
+/* contact */
+
+.contact {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+form {
+    width: 80%;
+}
+
+form h1 {
+    font-size: 45px;
+    padding-bottom:  40px;
+}
+
+.input-group {
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 15px;
+    color: black;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    font-size: 15px;
+}
+
+label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    cursor: text;
+    transition: 0.2s;
+}
+#bttn {
+    padding: 10px 0;
+    outline: none;
+    border: 1px solid black;
+    color: black;
+    width: 60%;
+    cursor: pointer;
+}
+
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    top: -35px;
+    font-size: 14px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row .input-group {
+    flex-basis: 48%;
+}
+/* end */
+/* services */
+.services {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #33343F;
+    margin-bottom: 30vh;
+}
+
+.services .container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;    
+}
+
+.container .servicebox {
+    position: relative;
+    width: 350px;
+    height: 280px;
+    background-color: #51446e;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.container .servicebox .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--i);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.container .servicebox:hover .icon {
+    top: 30px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.container .servicebox .icon ion-icon {
+    font-size: 5em;
+    color: #fff;
+    transition: 0.5s;
+}
+.container .servicebox:hover .icon ion-icon {
+    font-size: 2em;
+}
+
+.container .servicebox .content {
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    z-index: 1;
+    transform: scale(0);
+    transition: 0.5s
+}
+
+.container .servicebox:hover .content {
+    transform: scale(1);
+}
+
+.container .servicebox .content h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.container .servicebox .content p {
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.srv {
+    margin-bottom: 80px;
+    margin-top: 0;
+    text-align: center;
+    color: whitesmoke;
+}
+/* end */
+
+/* #navbar {
+    overflow: hidden;
+    background-color: #33343F;
+  } */
+  
+  /* Navbar links */
+/* #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none; */
+  
+  
+/* Page content */
+/* .contentt {
+    padding: 16px;
+} */
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+/* .sticky + .content {
+    padding-top: 60px;
+} */
